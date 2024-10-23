@@ -16,11 +16,11 @@ export class RegistrationComponent {
   registerUser() {
     if (this.username && this.password) {
       this.registrationService.register(this.username, this.password).subscribe(
-        (response: string) => {
-          this.message = 'Registration successful: ' + response;
+        (response: any) => {
+          this.message = 'Registration successful: ' + response.message;
         },
-        (error: any) => {
-          this.message = 'Registration failed: ' + error.message;
+        (error) => {
+          this.message = 'Registration failed: ' + (error.error?.error || error.message);
         }
       );
     } else {
