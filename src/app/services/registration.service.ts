@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RegistrationService {
 
-  private apiUrl = 'http://ec2-43-216-132-196.ap-southeast-5.compute.amazonaws.com:8080/api/register';
+  private apiUrl = 'http://ec2-43-216-81-166.ap-southeast-5.compute.amazonaws.com:8080/api/register';
 
   constructor(private http: HttpClient) { }
 

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class HelloService {
 
-  private readonly apiUrl = 'http://ec2-43-216-132-196.ap-southeast-5.compute.amazonaws.com:8080/api/hello';
+  private readonly apiUrl = 'http://ec2-43-216-81-166.ap-southeast-5.compute.amazonaws.com:8080/api/hello';
 
   constructor(private http: HttpClient) { }
 
