@@ -13,14 +13,13 @@ export class RegistrationComponent {
 
   constructor(private registrationService: RegistrationService) {}
 
-  // Function to register the user
   registerUser() {
     if (this.username && this.password) {
       this.registrationService.register(this.username, this.password).subscribe(
         (response: string) => {
           this.message = 'Registration successful: ' + response;
         },
-        (error) => {
+        (error: any) => {
           this.message = 'Registration failed: ' + error.message;
         }
       );

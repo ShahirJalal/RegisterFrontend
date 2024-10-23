@@ -1,0 +1,30 @@
+.hello-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .hello-form h2 {
+    text-align: center;
+  }
+  
+  .hello-form div {
+    margin-bottom: 15px;
+  }
+  
+  .hello-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hello-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hello-form p {
+    text-align: center;
+    color: green;
+  }  
