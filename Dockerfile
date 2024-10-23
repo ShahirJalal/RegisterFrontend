@@ -20,7 +20,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copy the built files from the previous step
-COPY --from=build /app/dist/RegisterFrontend /usr/share/nginx/html
+COPY --from=build /app/dist/frontend /usr/share/nginx/html
 
 # Copy the default nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
